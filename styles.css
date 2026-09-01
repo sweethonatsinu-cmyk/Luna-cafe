@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-image: url(cafe.jpg.jpg);
+    background-size: 80% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-attachment: scroll;
+}
+
+header {
+    width: 100%;
+    background-color:black;
+    padding: 10px;
+   
+    
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-left: 1000px; 
+   position: relative;
+    top:-50px ;
+    left:-20px ;
+    font-size: 18px;
+
+   
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.home {
+    position: relative;
+     min-height: 100vh;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color:lightblue;
+    text-align: center;
+ 
+}
+    
+
+.home img {
+    position: absolute;
+     inset: 0;
+    width: 300%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    background-attachment:fixed;
+    background-image: url(cafe.jpd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.home::after {
+    position: absolute;
+    inset: 0;
+    background:light blue(0, 0, 0, 0.35);
+    content: "";
+    z-index: -1;
+}
+
+.home h2,
+
+
+.home + p,
+   
+
+.home + p + button {
+    position: relative;
+    z-index: 1;
+   
+}
+
+.home h2 {
+    margin-top:1px ;
+}
+
+.home + p {
+    position: relative;
+    margin-top:50px;
+    text-align:center;
+   
+} 
+
+button {
+    padding: 12px 25px;
+    border: 8px;
+    border-radius: 45px;
+    background-color: #87ceeb;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+.logo{ 
+    white-space: nowrap;
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+  font-style: "segeo script,cursive;
+ }
+.home{
+    background-image: url(cafe.jpg.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+   @media (max-width 768px) {
+    header{
+        padding: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    h1{
+        font-family: 32px;
+        text-align: center;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+   }
+   
+          
+ 
